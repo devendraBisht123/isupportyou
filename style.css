@@ -399,3 +399,71 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+
+/* Responsive design for tablets */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 10px 5%;
+    }
+    .header-text {
+        margin-top: 15%;
+        font-size: 22px;
+    }
+    .header-text h1 {
+        font-size: 50px;
+    }
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+/* Responsive design for large phones */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+    .header-text {
+        margin-top: 20%;
+        font-size: 20px;
+    }
+    .header-text h1 {
+        font-size: 40px;
+    }
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Additional tweaks for better mobile experience */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 10px 3%;
+    }
+    .header-text {
+        margin-top: 30%;
+        font-size: 18px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .btn {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+}
